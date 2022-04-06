@@ -9,7 +9,7 @@ export default createSlice({
   ],
   reducers: {
     addTodo: (state, action) => {
-      return state.push(action.payload);
+      state.push(action.payload);
     },
     toggleTodoStatus: (state, action) => {
       const currentToto = state.find(todo => todo.id === action.payload);
